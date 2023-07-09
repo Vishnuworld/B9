@@ -196,6 +196,12 @@ class Orders(models.Model):
         db_table = 'orders'
 
 
+class TestModel(models.Model):
+    name = models.CharField(max_length=100)
+
+    class Meta:
+        db_table = "test_model"
+
 class Person(models.Model):
     id = models.BigAutoField(primary_key=True)
     name = models.CharField(max_length=100)
