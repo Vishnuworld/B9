@@ -203,7 +203,6 @@ class Person(models.Model):
     email = models.CharField(unique=True, max_length=254)
     mobile = models.BigIntegerField(unique=True, blank=True, null=True)
     is_active = models.IntegerField()
-
     class Meta:
         managed = False
         db_table = 'person'
@@ -217,14 +216,3 @@ class RelationshipCmodel(models.Model):
         managed = False
         db_table = 'relationship_cmodel'
 
-
-class RelationshipCmodelFueltype(models.Model):
-    id = models.BigAutoField(primary_key=True)
-    extra_field = models.CharField(max_length=200)
-    cmodel = models.ForeignKey(RelationshipCmodel, models.DO_NOTHING, blank=True, null=True)
-    fueltype = models.ForeignKey(FuelType, models.DO_NOTHING, blank=True, null=True)
-
-    class Meta:
-        managed = False
-        db_table = 'relationship_cmodel_fueltype'
-        unique_together = (('cmodel', 'fueltype'),)

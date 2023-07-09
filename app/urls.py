@@ -11,5 +11,5 @@ urlpatterns = [
     path("edit-book/<int:bid>/", library_views.edit_single_book, name="edit_single_book"),
     path("delete-book/<int:bid>/", library_views.delete_single_book, name="delete_single_book"),
     path("soft-delete-book/<int:bid>/", library_views.soft_delete_single_book, name="soft_delete_single_book"),
-    path("form-view/", library_views.form_view, name="form_view"),
+    # path("form-view/", library_views.form_view, name="form_view"),
 ]

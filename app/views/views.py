@@ -47,7 +47,7 @@ def add_single_book(request):
         else:
             is_pub = False
         Book.objects.create(name=book_name, price=book_price, qty=book_qty, is_published=is_pub, created_by=user)
-        messages.success(request, "Book has been added successfully..!" )
+        messages.success(request, "Book added successfully..!" )
         return redirect("show_books")
 
     elif request.method == "GET":

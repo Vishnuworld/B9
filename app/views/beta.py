@@ -5,3 +5,7 @@ def view_c(request):
 
 def view_d(request):
     return HttpResponse("view_d")
+
+
+def view_z(request):
+    return HttpResponse("view_z")

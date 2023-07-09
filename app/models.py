@@ -13,6 +13,7 @@ class Product(models.Model):
 
 
 class Book(models.Model):
+    """book model for library"""
     name = models.CharField(max_length=100)
     price = models.IntegerField()
     qty = models.IntegerField()
