@@ -115,3 +115,7 @@ class EmployeeDetailView(DeleteView):
         # self.object.is_active = 0  # soft delete
         # self.object.save()
         return HttpResponseRedirect(success_url)
+    
+
+class MohiniView(DeleteView):
+    pass
