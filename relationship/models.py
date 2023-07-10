@@ -93,3 +93,4 @@ class CModel(models.Model): # cmodel_object.fueltype.all()
 print("in master branch")
 
 print("changes done by mohini")
+print("in f1 branch")

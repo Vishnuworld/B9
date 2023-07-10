@@ -20,7 +20,7 @@ from app import views
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls),  # for admin url
     
     path("viewa-a/", views.view_a, name="view_a"),
 
@@ -46,11 +46,4 @@ urlpatterns = [
 # http://127.0.0.1:8000/book/soft-delete-book/1/
 # http://127.0.0.1:8000/book/form-view/
 
-
-# user_app urls
-# http://127.0.0.1:8000/user/signup/
-
-
-# cbv_app
-# http://127.0.0.1:8000/cbv/new-cview
 
