@@ -87,3 +87,7 @@ class CModel(models.Model): # cmodel_object.fueltype.all()
 #         unique_together = (('cmodel', 'fueltype'),) # composite key
 
 # id, fuletype_id, cmodel_id, extra_field
+
+
+
+print("in master branch")
