@@ -9,6 +9,7 @@ from django.contrib.auth import login, authenticate, logout
 def user_signup(request):
     if request.method == "POST":
         data = request.POST
+        print(data, "Data")
         form = NewUserForm(data)
         if form.is_valid():
             user = form.save()  # user entry in auth_user table
@@ -31,6 +32,7 @@ def user_login(request):
         #     print(user_name, password)
         user_name = request.POST.get("username")
         password = request.POST.get("password")
+        print(user_name, password)
         user = authenticate(username=user_name, password=password)  # verify -- auth_user -- return user object
         if user:
             login(request, user)   # session maintain -- django session table

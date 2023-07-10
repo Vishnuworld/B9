@@ -11,6 +11,8 @@ class Product(models.Model):
     class Meta:
         abstract = True
 
+class VinitaModel(models.Model):
+    name = models.CharField(max_length=100)
 
 class Book(models.Model):
     """book model for library"""
