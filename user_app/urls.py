@@ -13,9 +13,9 @@ urlpatterns = [
 # split views
 # urls 
 
+# this is url for user_app
 
 
 
-# bharat, nanasaheb, gaurav --- 
 
 
